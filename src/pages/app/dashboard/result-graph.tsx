@@ -45,6 +45,7 @@ export function ResultGraph() {
                             }
                         />
                         <Line type="linear" stroke={colors.violet['500']} strokeWidth={2} dataKey="revenue" />
+                        <CartesianGrid vertical={false} className="stroke-muted" />
                     </LineChart>
                 </ResponsiveContainer>
             </CardContent>
