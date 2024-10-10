@@ -1,4 +1,4 @@
-import { signUpRestaurant } from '@/api/sign-up-restaurant'
+import { signUpRestaurant } from '@/api-requisitions/sign-up-restaurant'
 import { Button } from '@/components/ui/button'
 import { Input } from '@/components/ui/input'
 import { Label } from '@/components/ui/label'

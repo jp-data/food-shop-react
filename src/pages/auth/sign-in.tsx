@@ -7,7 +7,7 @@ import { z } from 'zod'
 import { toast } from 'sonner'
 import { Link, useSearchParams } from 'react-router-dom'
 import { useMutation } from '@tanstack/react-query'
-import { signIn } from '@/api/sign-in'
+import { signIn } from '@/api-requisitions/sign-in'
 
 
 const signForm = z.object({
