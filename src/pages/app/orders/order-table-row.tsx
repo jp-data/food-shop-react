@@ -3,8 +3,17 @@ import { Dialog, DialogTrigger } from "@/components/ui/dialog";
 import { TableCell, TableRow } from "@/components/ui/table";
 import { ArrowRight, Search, X } from "lucide-react";
 import { OrderDetails } from "./order-details";
+import { useQuery } from "@tanstack/react-query";
+import { getOrders } from "@/api-requisitions/get-orders";
 
 export function OrderTableRow() {
+    const { data: orders } = useQuery({
+        queryKey: ['orders'],
+        queryFn: getOrders
+    })
+
+
+
     return (
         <TableRow>
             <TableCell>
